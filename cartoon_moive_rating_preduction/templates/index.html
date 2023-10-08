@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anime Rating Prediction</title>
+    <style>
+        /* Style the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b1b115;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style the heading */
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        /* Style the form container */
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+            background-color: #b2d419;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style form labels */
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        /* Style form input fields */
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Style form submit button */
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Style form submit button on hover */
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cartoon moives Rating Prediction</h1>
+    <form method="POST" action="/predict">
+        <label for="genre">Genre:</label>
+        <input type="text" id="genre" name="genre" required><br><br>
+
+        <label for="type">Type (e.g., TV, Movie, OVA):</label>
+        <input type="text" id="type" name="type" required><br><br>
+
+        <label for="episodes">Episodes:</label>
+        <input type="number" id="episodes" name="episodes" required><br><br>
+
+        <label for="members">Members:</label>
+        <input type="number" id="members" name="members" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
